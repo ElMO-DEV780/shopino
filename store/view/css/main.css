@@ -1,0 +1,249 @@
+:root {
+    --royal-blue: #4169E1;
+    --night-blue: #191970;
+    --teal-blue: #367588;
+    --steel-blue: #4682B4;
+    --dodger-blue: #1E90FF;
+    --sky-blue: #87ceeb;
+    --text-color: #222;
+
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+}
+body {
+    background-color: white;
+}
+header {
+    background-color: white;
+    padding: 15px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.062);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 90%;
+}
+.logo h2 {
+    font-weight: 900;
+    text-transform: capitalize;
+    color: var(--night-blue);
+}
+nav {
+    display: flex;
+    gap: 25px;
+}
+nav a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 500;
+    transition: 0.4s color ease;
+    color: var(--text-color);
+}
+nav a:hover {
+    color: var(--night-blue);
+}
+button {
+    border: none;
+    padding: 5px 10px;
+    text-transform: capitalize;
+    border-radius: 50px;
+    font-weight: 800;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s all ease-in;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.075);
+}
+button:hover {
+    transform: translateY(-2px);
+}
+.btns .login_btn {
+    color: #222;
+    margin-right: 10px;
+}
+.btns .register_btn {
+    background: linear-gradient(to left, var(--sky-blue) , var(--dodger-blue));
+    margin-left: 10px;
+}
+main {
+    padding: 0 100px;
+    background: linear-gradient(to right, var(--night-blue) , var(--dodger-blue));
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+}
+main h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+main p {
+    font-size: 1.5rem;
+    font-weight: 500r;
+}
+main .start {
+    color: white;
+    font-size: 1.2rem;
+    background: linear-gradient(to left, var(--sky-blue) , var(--dodger-blue));
+    padding: 15px 30px;
+    margin-top: 10px;
+}
+main .start:hover {
+    background: var(--night-blue);
+}
+.about {
+    height: 100vh;
+    padding: 10px 100px;
+}
+.about-title {
+    text-align: center;
+    padding: 30px 0;
+    line-height: 40px;
+}
+.about .about-title h1 {
+    text-transform: capitalize;
+}
+.about .slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+.about .slider img {
+   width: 70%; 
+   height: 370px;
+   object-fit: cover;
+   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.151);
+   border-radius: 10px;
+   transition: 0.4s all ease;
+   z-index: -100;
+}
+.about .slider .slider-l , .slider-r {
+    font-size: 2.5rem;
+    border-radius: 100px;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: 0.3s color ease;
+}
+.about .slider .slider-l:hover , .slider-r:hover {
+    color: var(--dodger-blue);
+}
+.about .slider .slider-l {
+    position: absolute;
+    left: 100px;
+}
+.about .slider .slider-r {
+    position: absolute;
+    right: 100px;
+}
+.services {
+    padding: 20px 100px;
+    height: 100vh;
+}
+.services .cards {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 20px;
+}
+.services .cards .card {
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.068);
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.082);
+    text-align: center;
+}
+.services .cards .card .icon{
+    font-size: 3rem;
+    color: var(--night-blue);
+    margin-bottom: 15px;
+}
+.services .cards .card h2 {
+    text-transform: capitalize;
+}
+.services .cards .card p  {
+    color: #4d4c4c;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+footer {
+    color: white;
+     padding: 20px 100px;
+    background-color: var(--night-blue);
+    position: absolute;
+    top: 80%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+footer .contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 40px 0;
+    border-bottom: 1px solid  rgb(0, 0, 155);
+}
+footer .contact .card {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+footer .contact .card i {
+    font-size: 1.7rem;
+    color: var(--royal-blue);
+}
+footer .contact .card p {
+    color: var(--royal-blue);
+}
+footer .contact .card h4 {
+    text-transform: capitalize;
+    color: white;
+}
+.social {
+    display: flex;
+    gap: 55px;
+    justify-content: center;
+    padding: 20px 0;
+}
+.social i {
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    background-color: var(--dodger-blue);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+footer .links a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 500;
+    transition: 0.4s color ease;
+    color: white;
+}
+.copy {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}

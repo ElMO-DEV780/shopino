@@ -1,0 +1,61 @@
+.register {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.register form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.register h2 {
+    text-transform: capitalize;
+    color: blueviolet;
+}
+.register form input {
+    padding: 10px 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 0.8px solid #c9c6c6;
+}
+.register form input:focus {
+    border-color: var(--sky-blue);
+}
+.register label {
+    font-size: small;
+    color: rgb(94, 93, 93);
+    text-transform: uppercase;
+}
+.register input[type="submit"] {
+    background-color: var(--sky-blue);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.2s all ease;
+}
+.register input[type="submit"]:hover {
+    letter-spacing: 2px;
+}
+.register span {
+    font-size: 11px;
+    color: rgb(255, 14, 14);
+}
+.register p {
+    text-transform: capitalize;
+    padding: 10px 0 0 0;
+    border-top: 1px solid #c9c6c6;
+    margin-top: 15px;
+    text-align: center;
+}
+.register a {
+    color: var(--dodger-blue);
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.register .faild {
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: rgb(250, 54, 54);
+}

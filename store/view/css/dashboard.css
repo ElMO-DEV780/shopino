@@ -1,0 +1,128 @@
+
+.side_bar_menu {
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 90%;
+    border-right: 1px solid rgb(211, 210, 210);
+}
+.side_bar_menu .head {
+    padding: 30px 5px;
+    border-bottom: 1px solid rgb(211, 210, 210);
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.side_bar_menu .user_logo {
+    color: rgb(37, 77, 252);
+    background-color: rgb(204, 204, 204);
+    text-transform: uppercase;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 0 5px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.side_bar_menu .username {
+    text-transform: capitalize;
+    font-weight: 900;
+}
+.side_bar_menu a {
+    margin: 5px;
+    text-decoration: none;
+    color: rgb(99, 99, 99);
+    text-transform: capitalize;
+    padding: 5px 10px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 12.5px;
+    text-align: left;
+}
+.side_bar_menu a:first-child {
+    background-color: #e6e3e3;
+    color: blueviolet;
+}
+.container {
+    margin: auto;
+    padding: 80px 5px;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    right: 0;
+    top: /*10%*/ 0;
+    background-color: #f1f1f1;
+    overflow: scroll;
+    border-radius: 10px;
+}
+.greet .greeting {
+    border-bottom: 1px solid rgb(201, 198, 198);
+    margin-bottom: 10px;
+}
+.greet .greeting h1 {
+    text-transform: capitalize;
+    margin: 20px 5px;
+}
+.greet p {
+    margin: 10px 5px;
+    text-transform: capitalize;
+}
+.greet .account_status , .date_joined {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: gray;
+}
+.greet i {
+    color: gray;
+    font-size: 12px;
+}
+.greet h3 {
+    text-transform: capitalize;
+}
+.account_settings .edit_info form {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.account_settings .edit_info {
+    width: 50%;
+}
+.account_settings .edit_info form input {
+    padding: 10px 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 0.8px solid #c9c6c6;
+    margin: 5px;
+}
+.account_settings .edit_info form input:focus {
+    border-color: var(--sky-blue);
+}
+.account_settings label {
+    font-size: small;
+    color: rgb(94, 93, 93);
+    text-transform: uppercase;
+}
+.account_settings .edit_info form input[type="submit"] {
+    background-color: var(--sky-blue);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.2s all ease;
+}
+.account_settings .edit_info form input[type="submit"]:hover {
+    letter-spacing: 2px;
+}
+
+/* dashboard pages design */
+.content {
+    width: 80%;
+    margin: auto;
+}
